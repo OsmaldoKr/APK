@@ -69,16 +69,18 @@
 <body>
     <h1>Nivel 3 - Literatura</h1>
     <div class="pregunta">
-        <img src="/html/Literatura/niveles/lvl1/3.jfif" alt="29 + 11">
+        <img src="/html/Literatura/niveles/lvl2/3.jfif" alt="29 + 11">
         <div class="opciones-container">
-            <div class="opcion" onclick="verificarRespuesta(1)">Simple</div>
-            <div class="opcion" onclick="verificarRespuesta(2)">Compuesta</div>
-            <div class="opcion" onclick="verificarRespuesta(3)">Esdrujula</div>
+            <div class="opcion" onclick="verificarRespuesta(1)"> La dramaturgia es un género literario que se caracteriza por la narración de hechos reales en forma de ficción, utilizando elementos fantásticos y sobrenaturales.
+            </div>
+            <div class="opcion" onclick="verificarRespuesta(2)"> La novela es un género literario narrativo en prosa que presenta una historia extensa y compleja con personajes, tramas y ambientaciones desarrolladas.</div>
+            <div class="opcion" onclick="verificarRespuesta(3)">La poesía es un género literario en prosa que se caracteriza por utilizar un lenguaje sencillo y directo para transmitir emociones y sentimientos de manera objetiva.
+            </div>
         </div>
     </div>
     <div class="mensaje" id="mensaje-correcto" style="display: none;">¡Respuesta correcta!</div>
     <div class="botones-container">
-        <button class="boton salir" onclick="location.href='/html/literatura/niveles/facil.html'">Salir</button>
+        <button class="boton salir" onclick="location.href='/html/literatura/niveles/dificil.html'">Salir</button>
         <button class="boton avanzar" onclick="avanzar()">Home</button>
     </div>
 
@@ -95,7 +97,7 @@
         }
 
         function avanzar() {
-            location.href = '/html/literatura/niveles/facil.html'; // Cambia nivel2.html por la siguiente página del nivel 1
+            location.href = '/html/literatura/niveles/dificil.html'; // Cambia nivel2.html por la siguiente página del nivel 1
         }
     </script>
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nivel 3 - Literatura</title>
+    <title>Nivel 2 - Literatura</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -67,24 +67,25 @@
     </style>
 </head>
 <body>
-    <h1>Nivel 3 - Literatura</h1>
+    <h1>Nivel 2 - Literatura</h1>
     <div class="pregunta">
-        <img src="/html/Literatura/niveles/lvl1/3.jfif" alt="29 + 11">
+        <img src="/html/Literatura/niveles/lvl2/2.jfif" alt="29 + 11">
         <div class="opciones-container">
-            <div class="opcion" onclick="verificarRespuesta(1)">Simple</div>
-            <div class="opcion" onclick="verificarRespuesta(2)">Compuesta</div>
-            <div class="opcion" onclick="verificarRespuesta(3)">Esdrujula</div>
+            <div class="opcion" onclick="verificarRespuesta(1)">Las fichas de indexación son fichas utilizadas para resumir información relevante de un texto, conferencia, clase, o cualquier otra fuente de información.
+            </div>
+            <div class="opcion" onclick="verificarRespuesta(2)">Las fichas de estudio o resumen son fichas utilizadas en sistemas de indexación y catalogación para organizar y clasificar información de manera sistemática.</div>
+            <div class="opcion" onclick="verificarRespuesta(3)"> Las fichas bibliográficas son fichas utilizadas para registrar información bibliográfica de libros, revistas, artículos, etc., incluyendo datos como el título, autor, editorial, año de publicación, entre otros.</div>
         </div>
     </div>
     <div class="mensaje" id="mensaje-correcto" style="display: none;">¡Respuesta correcta!</div>
     <div class="botones-container">
-        <button class="boton salir" onclick="location.href='/html/literatura/niveles/facil.html'">Salir</button>
-        <button class="boton avanzar" onclick="avanzar()">Home</button>
+        <button class="boton salir" onclick="location.href='/html/literatura/niveles/dificil.html'">Salir</button>
+        <button class="boton avanzar" onclick="avanzar()">Avanzar</button>
     </div>
 
     <script>
         function verificarRespuesta(respuesta) {
-            if (respuesta === 2) {
+            if (respuesta === 3) {
                 document.getElementById('mensaje-correcto').style.display = 'block';
                 setTimeout(function() {
                     document.getElementById('mensaje-correcto').style.display = 'none';
@@ -95,7 +96,7 @@
         }
 
         function avanzar() {
-            location.href = '/html/literatura/niveles/facil.html'; // Cambia nivel2.html por la siguiente página del nivel 1
+            location.href = 'lvl3.html'; // Cambia nivel2.html por la siguiente página del nivel 1
         }
     </script>
 </body>
